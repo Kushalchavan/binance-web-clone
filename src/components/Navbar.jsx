@@ -39,7 +39,7 @@ const Navbar = () => {
             Log In
           </button>
           <button className="p-2 rounded-md font-semibold bg-amber-300 hover:bg-amber-200 cursor-pointer hidden sm:flex dark:hover:bg-amber-400 dark:text-black">
-            Sign Up 
+            Sign Up
           </button>
           <Download className="hover:text-amber-300 cursor-pointer hidden md:flex" />
           <Globe className="hover:text-amber-300 cursor-pointer hidden md:flex" />

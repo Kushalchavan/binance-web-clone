@@ -5,7 +5,7 @@ const Card = () => {
   const [data, setData] = useState("Popular");
 
   return (
-    <div className="h-72 ring ring-gray-400/20 rounded-md p-6 flex flex-col justify-between bg-gray-100/40 dark:bg-gray-800/40">
+    <div className="h-72 ring ring-gray-400/20 rounded-md p-6 flex flex-col justify-between bg-gray-100/40 dark:bg-gray-800/40 mb-12">
       <div className="flex items-center justify-between dark:text-white">
         <div className="flex gap-3 items-center">
           <span
@@ -41,11 +41,11 @@ const Card = () => {
                   </span>{" "}
                   <span className="text-gray-400 text-sm">{data.subName}</span>
                 </div>
-                <div>${data.price}</div>
+                <div className="text-sm">${data.price}</div>
                 <div
-                  className={
+                  className={`text-sm ${
                     data.stocks > 0 ? "text-green-500" : "text-red-500"
-                  }
+                  }`}
                 >
                   {data.stocks > 0 ? "+" : ""}
                   {data.stocks}%
@@ -67,9 +67,9 @@ const Card = () => {
                       : data.subName}
                   </span>
                 </div>
-                <div>${data.price}</div>
+                <div className="text-sm">${data.price}</div>
                 <div
-                  className={`${
+                  className={`text-sm ${
                     data.stocks > 0 ? "text-green-500" : "text-red-500"
                   }`}
                 >

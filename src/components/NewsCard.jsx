@@ -8,21 +8,25 @@ const NewsCard = () => {
         </span>
       </div>
 
-      <div className="flex flex-col gap-4 mt-4">
-        <p className="text-base text-gray-600 dark:text-gray-200 dark:hover:text-gray-300 hover:text-gray-500 cursor-pointer">
+      <div className="flex flex-col gap-4 mt-4 text-sm">
+        <p className=" text-gray-600 dark:text-gray-200 dark:hover:text-gray-300 hover:text-gray-500 cursor-pointer ">
+          Capital B Secures €5 Million to Enhance Bitcoin Reserve Strategy
+        </p>
+        
+        <p className=" text-gray-600 dark:text-gray-200 dark:hover:text-gray-300 hover:text-gray-500 cursor-pointer ">
           Capital B Secures €5 Million to Enhance Bitcoin Reserve Strategy
         </p>
 
-        <p className="text-base text-gray-600 dark:text-gray-200 dark:hover:text-gray-300 hover:text-gray-500 cursor-pointer">
+        <p className=" text-gray-600 dark:text-gray-200 dark:hover:text-gray-300 hover:text-gray-500 cursor-pointer">
           Binance Alpha to Feature OpenLedger (OPEN), Airdrop 200 OPEN Tokens to
           Eligible Users
         </p>
 
-        <p className="text-base text-gray-600 dark:text-gray-200 dark:hover:text-gray-300 hover:text-gray-500 cursor-pointer">
+        <p className=" text-gray-600 dark:text-gray-200 dark:hover:text-gray-300 hover:text-gray-500 cursor-pointer">
           Binance Introduces AI-Powered Trading Signals on Wallet
         </p>
 
-        <p className="text-base text-gray-600 dark:text-gray-200 dark:hover:text-gray-300 hover:text-gray-500 cursor-pointer">
+        <p className=" text-gray-600 dark:text-gray-200 dark:hover:text-gray-300 hover:text-gray-500 cursor-pointer">
           Binance to Launch WLFIUSDC Perpetual Contract with 75x Leverage
         </p>
       </div>
