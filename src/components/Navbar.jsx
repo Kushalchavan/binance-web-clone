@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <nav className="dark:bg-gray-900 w-screen h-14 backdrop-blur-md tracking-tight">
-      <div className="w-full h-full flex justify-between items-center px-2 md:px-4">
+      <div className="w-full h-full flex justify-between items-center px-4 md:px-8">
         <div className="flex gap-4 justify-center items-center">
           <img src={logo} alt="Logo" className="w-32 cursor-pointer" />
           <ul className="hidden md:flex gap-4 items-center justify-center font-medium text-sm dark:text-white">

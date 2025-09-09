@@ -1,4 +1,5 @@
 import Download from "./components/Download"
+import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 
@@ -9,6 +10,7 @@ const App = () => {
       <div className="px-3 md:px-18 lg:px-32 dark:bg-gray-900">
         <Hero/>
         <Download/>
+        <Footer/>
       </div>
     </>
   )
