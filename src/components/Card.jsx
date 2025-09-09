@@ -5,7 +5,7 @@ const Card = () => {
   const [data, setData] = useState("Popular");
 
   return (
-    <div className="w-1/3 border border-yellow-200 rounded-md p-6 flex flex-col justify-between">
+    <div className="h-72 ring ring-gray-400/20 rounded-md p-6 flex flex-col justify-between bg-gray-100/40 dark:bg-gray-800/40">
       <div className="flex items-center justify-between dark:text-white">
         <div className="flex gap-3 items-center">
           <span
@@ -42,7 +42,14 @@ const Card = () => {
                   <span className="text-gray-400 text-sm">{data.subName}</span>
                 </div>
                 <div>${data.price}</div>
-                <div>{data.stocks}</div>
+                <div
+                  className={
+                    data.stocks > 0 ? "text-green-500" : "text-red-500"
+                  }
+                >
+                  {data.stocks > 0 ? "+" : ""}
+                  {data.stocks}%
+                </div>
               </div>
             </div>
           ))
@@ -54,14 +61,26 @@ const Card = () => {
                   <span className="hover:text-gray-600 dark:hover:text-gray-300 cursor-pointer">
                     {data.name}
                   </span>{" "}
-                  <span className="text-gray-400 text-sm">{data.subName}</span>
+                  <span className="text-gray-400 text-sm">
+                    {data.subName.length > 12
+                      ? data.subName.slice(0, 12) + "..."
+                      : data.subName}
+                  </span>
                 </div>
                 <div>${data.price}</div>
-                <div>{data.stocks}</div>
+                <div
+                  className={`${
+                    data.stocks > 0 ? "text-green-500" : "text-red-500"
+                  }`}
+                >
+                  {data.stocks > 0 ? "+" : ""}
+                  {data.stocks}%
+                </div>
               </div>
             </div>
           ))}
     </div>
   );
 };
+
 export default Card;

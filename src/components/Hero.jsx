@@ -1,10 +1,11 @@
 import Card from "./Card";
+import NewsCard from "./NewsCard";
 
 const Hero = () => {
   return (
-    <div className="w-full tracking-tight flex">
-      <div className="">
-        <h2 className="text-7xl uppercase font-bold dark:text-white">
+    <div className="w-full h-[100%] tracking-tight flex gap-16 justify-between pt-18">
+      <div className="w-1/2">
+        <h2 className="text-8xl uppercase font-bold dark:text-white">
           <span className="text-amber-400">288,113,332</span> <br /> users{" "}
           <br />
           trust us
@@ -13,15 +14,19 @@ const Hero = () => {
         <div className="flex gap-3 mt-8">
           <input
             type="text"
-            className="px-4 py-3 rounded-md focus:ring-amber-400 ring ring-gray-400 hover:ring-amber-400 placeholder:text-gray-400"
+            className="w-1/2 px-4 py-3 rounded-md focus:ring-amber-400 ring ring-gray-400 hover:ring-amber-400 placeholder:text-gray-400"
             placeholder="Email/Phone Number"
           />
-          <button className="px-6 py-3 rounded-md bg-amber-400 cursor-pointer">
+          <button className="px-10 py-3 rounded-md bg-amber-400 cursor-pointer dark:hover:bg-amber-500">
             Sign Up
           </button>
         </div>
       </div>
-      <Card />
+
+      <div className="w-1/2 h-full flex flex-col gap-8">
+        <Card />
+        <NewsCard />
+      </div>
     </div>
   );
 };
