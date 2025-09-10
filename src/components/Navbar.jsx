@@ -18,7 +18,7 @@ const Navbar = () => {
   }, [theme]);
 
   return (
-    <nav className="dark:bg-gray-900 w-screen h-14 backdrop-blur-md tracking-tight">
+    <nav className="fixed top-0 z-10 dark:bg-gray-900 w-screen h-14 backdrop-blur-md tracking-tight">
       <div className="w-full h-full flex justify-between items-center px-4 md:px-8">
         <div className="flex gap-4 justify-center items-center">
           <img src={logo} alt="Logo" className="w-32 cursor-pointer" />

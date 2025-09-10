@@ -9,7 +9,7 @@ const Accordian = () => {
   };
 
   return (
-    <div className="mt-12 mb-12 w-full dark:text-white tracking-tight">
+    <div className="md:mt-40 mb-22 w-full dark:text-white tracking-tight">
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-10 tracking-tight">
         Frequently Asked Questions
       </h1>
@@ -18,7 +18,7 @@ const Accordian = () => {
         {AccordianData.map((data, index) => (
           <div key={data.id} className=" mb-1 p-8">
             <p
-              className="w-full flex justify-between items-center font-bold text-xl md:text-2xl cursor-pointer"
+              className="w-full flex justify-between items-center font-bold text-xl md:text-xl cursor-pointer"
               onClick={() => toggleAccordian(index)}
             >
               {data.question} <span>{open === index ? "-" : "+"}</span>

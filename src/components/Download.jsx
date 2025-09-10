@@ -29,7 +29,7 @@ const Download = () => {
 
   return (
     <div className="w-full mt-30 mb-30 flex justify-center items-center dark:text-white tracking-tight">
-      <div className="flex w-10/12 h-96 max-w-6xl items-center justify-between gap-12">
+      <div className="flex flex-col sm:flex-row md:flex-row w-10/12  max-w-6xl items-center justify-between gap-12">
         {/* left side section */}
         <div className="relative flex flex-col items-center border-b border-gray-600">
           <div>
@@ -66,7 +66,7 @@ const Download = () => {
 
         {/* right side section */}
         <div className="flex flex-col gap-8 items-center text-center">
-          <h3 className="dark:text-white text-3xl">
+          <h3 className="dark:text-white text-2xl md:text-3xl">
             Trade on the go. Anywhere anytime.
           </h3>
 

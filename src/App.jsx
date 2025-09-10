@@ -8,7 +8,7 @@ const App = () => {
   return (
     <>
       <Navbar/>
-      <div className="px-3 md:px-18 lg:px-32 dark:bg-gray-900">
+      <div className="px-3 md:px-22 lg:px-38 dark:bg-gray-900">
         <Hero/>
         <Download/>
         <Accordian/>
